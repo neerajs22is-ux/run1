@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#1a0e0a" />
+<title>Tatsa, Bellandur — Strategy Plan &amp; Content Briefs</title>
+<script>document.documentElement.classList.add("js");</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=DM+Mono:wght@400;500&family=Figtree:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/base.css" />
+<link rel="stylesheet" href="css/slides-a.css" />
+<link rel="stylesheet" href="css/slides-b.css" />
+<link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+<canvas id="embers" aria-hidden="true"></canvas>
+<div id="progress" aria-hidden="true"></div>
+<nav id="nav-dots" aria-label="Slide navigation"></nav>
+<div id="cursor" aria-hidden="true"></div>
+
+<div id="dock" role="group" aria-label="Deck controls">
+  <button id="btn-prev" class="dock-btn" aria-label="Previous slide"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12H4M10 6l-6 6 6 6"/></svg></button>
+  <div class="dock-mid" aria-live="polite"><span class="dock-idx"></span><span class="dock-title"></span></div>
+  <button id="btn-next" class="dock-btn" aria-label="Next slide"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"/></svg></button>
+  <i class="dock-sep" aria-hidden="true"></i>
+  <button id="btn-menu" class="dock-btn dock-btn--txt" aria-haspopup="dialog" aria-expanded="false">Contents</button>
+  <button id="btn-fs" class="dock-btn" aria-label="Toggle fullscreen"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v-5h-5"/></svg></button>
+</div>
+
+<div id="menu" role="dialog" aria-modal="true" aria-label="Contents" aria-hidden="true">
+  <div class="menu-head"><span class="label">Contents · Tatsa strategy plan</span><button id="menu-close" class="menu-close">Close ✕</button></div>
+  <ol class="menu-list" id="menu-list"></ol>
+</div>
+
+<main id="deck">
+<!-- ═════ 01 · COVER ═════ -->
+<section class="slide dark" data-title="Cover" data-sub="Tatsa, Bellandur" aria-roledescription="slide" aria-label="Cover">
+ <div class="stage stage--cover">
+  <header class="chrome" data-anim="fade-in">
+   <span class="label brand">Tatsa · Bellandur</span>
+   <span class="label">Strategy plan · October 2026</span>
+  </header>
+  <div class="body cover-body">
+   <div class="art cover-art" aria-hidden="true">
+    <svg class="thali" viewBox="0 0 640 640">
+     <defs>
+      <radialGradient id="plateG" cx="50%" cy="45%" r="60%"><stop offset="0" stop-color="#3a1f15"/><stop offset="1" stop-color="#1f100b"/></radialGradient>
+      <radialGradient id="riceG" cx="40%" cy="35%" r="70%"><stop offset="0" stop-color="#fff6df"/><stop offset="1" stop-color="#e6cf9c"/></radialGradient>
+     </defs>
+     <g class="thali-spin"><circle cx="320" cy="320" r="312" fill="none" stroke="#f0a81c" stroke-width="1.6" stroke-dasharray="3 12" stroke-linecap="round" opacity=".7"/></g>
+     <circle class="tp draw" pathLength="1" style="--d:0" cx="320" cy="320" r="288" fill="url(#plateG)" stroke="#f0a81c" stroke-width="3"/>
+     <circle class="tp draw" pathLength="1" style="--d:2" cx="320" cy="320" r="262" fill="none" stroke="#fbf0d9" stroke-width="1.2" opacity=".5"/>
+     <circle class="tp draw" pathLength="1" style="--d:3" cx="320" cy="320" r="236" fill="none" stroke="#d6401f" stroke-width="2" stroke-dasharray="1 0"/>
+     <!-- katoris -->
+     <g class="kat" style="--k:0"><circle cx="320" cy="132" r="62" fill="#2a140b" stroke="#f0a81c" stroke-width="2"/><circle cx="320" cy="132" r="48" fill="#d6401f"/><circle cx="320" cy="132" r="30" fill="#e9653d" opacity=".7"/><circle cx="308" cy="124" r="5" fill="#fbe3b4"/></g>
+     <g class="kat" style="--k:1"><circle cx="498" cy="262" r="62" fill="#2a140b" stroke="#f0a81c" stroke-width="2"/><circle cx="498" cy="262" r="48" fill="#f0a81c"/><circle cx="498" cy="262" r="28" fill="#ffd36e" opacity=".8"/><circle cx="486" cy="252" r="4" fill="#4f7a3d"/><circle cx="508" cy="274" r="4" fill="#4f7a3d"/></g>
+     <g class="kat" style="--k:2"><circle cx="430" cy="470" r="62" fill="#2a140b" stroke="#f0a81c" stroke-width="2"/><circle cx="430" cy="470" r="48" fill="#4f7a3d"/><circle cx="430" cy="470" r="26" fill="#6d9a55" opacity=".8"/><rect x="416" y="456" width="22" height="14" rx="4" fill="#fbf0d9" opacity=".85"/></g>
+     <g class="kat" style="--k:3"><circle cx="210" cy="470" r="62" fill="#2a140b" stroke="#f0a81c" stroke-width="2"/><circle cx="210" cy="470" r="48" fill="#8c3a1c"/><circle cx="210" cy="470" r="28" fill="#b2542c" opacity=".8"/><circle cx="222" cy="460" r="5" fill="#f0a81c"/></g>
+     <g class="kat" style="--k:4"><circle cx="142" cy="262" r="62" fill="#2a140b" stroke="#f0a81c" stroke-width="2"/><circle cx="142" cy="262" r="48" fill="#fff0c7"/><path d="M110 262q16 -18 32 0t32 0" fill="none" stroke="#e6a82c" stroke-width="3" stroke-linecap="round"/></g>
+     <!-- rice mound + papad -->
+     <circle cx="320" cy="320" r="70" fill="url(#riceG)" stroke="#2a140b" stroke-width="2"/>
+     <g fill="#c9a96a" opacity=".9"><circle cx="300" cy="300" r="2.4"/><circle cx="326" cy="296" r="2.4"/><circle cx="344" cy="320" r="2.4"/><circle cx="310" cy="338" r="2.4"/><circle cx="290" cy="322" r="2.4"/><circle cx="332" cy="340" r="2.4"/></g>
+     <path d="M284 318q36 -52 72 0" fill="none" stroke="#d6401f" stroke-width="3" stroke-linecap="round" opacity=".0"/>
+     <!-- steam -->
+     <g fill="none" stroke="#fffaf0" stroke-width="5" stroke-linecap="round" opacity=".0">
+      <path class="steam-p" style="--s:0" d="M308 96q10 -22 0 -40"/><path class="steam-p" style="--s:1" d="M332 96q-10 -22 0 -40"/>
+      <path class="steam-p" style="--s:2" d="M486 226q10 -22 0 -40"/><path class="steam-p" style="--s:3" d="M418 434q10 -22 0 -40"/>
+      <path class="steam-p" style="--s:4" d="M198 434q10 -22 0 -40"/><path class="steam-p" style="--s:5" d="M130 226q10 -22 0 -40"/>
+     </g>
+    </svg>
+    <div class="ctag" style="right:46%;top:12%;animation-delay:-1s"><span class="dot"></span>Team lunch <b>· day</b></div>
+    <div class="ctag" style="right:5%;top:42%;animation-delay:-2.5s"><span class="dot"></span>Family table <b>· evening</b></div>
+    <div class="ctag" style="right:28%;bottom:13%;animation-delay:-4s"><span class="dot"></span>STB <b>· next door</b></div>
+   </div>
+   <div class="kicker" data-anim="fade-up" data-delay="1">Strategy plan &amp; example content briefs</div>
+   <h1 class="display" data-anim="fade-up" data-delay="2">Tatsa<span class="comma">,</span><br /><em>Bellandur.</em></h1>
+   <p class="cover-sub" data-anim="fade-up" data-delay="3">The easy, good Indian meal in Bellandur — for the team at lunch and the family in the evening. One restaurant, two moods, one system.</p>
+   <div class="cover-row" data-anim="fade-up" data-delay="4">
+    <button class="btn" data-go="next">Open the plan <span class="arr" aria-hidden="true">→</span></button>
+    <span class="label muted">Use ← → or scroll</span>
+   </div>
+  </div>
+  <footer class="foot" data-anim="fade-in" data-delay="4">
+   <span class="label">Prepared by Thrine · Draft for discussion</span>
+   <span class="label">For the founders &amp; investors of Tatsa</span>
+  </footer>
+ </div>
+</section>
+<!-- ═════ 02 · POSITIONING ═════ -->
+<section class="slide light" data-title="Positioning" data-sub="One restaurant, two moods" aria-roledescription="slide" aria-label="Positioning">
+ <div class="stage">
+  <header class="chrome"><span class="label brand">Tatsa · Positioning</span><span class="label folio"><b>02</b> / 11</span></header>
+  <div class="body split2 pos">
+   <div class="stack" style="gap:var(--s-3)">
+    <div class="kicker" data-anim="fade-in" data-delay="1">01 · Positioning</div>
+    <h2 class="h2" data-anim="fade-up" data-delay="2">Tatsa is the <em>easy, good</em> Indian meal in Bellandur.</h2>
+    <p class="lead muted" data-anim="fade-up" data-delay="3" style="max-width:calc(var(--u)*700)">For the team at lunch and the family in the evening. Same restaurant, same look, same voice — only the headline and the offer change.</p>
+    <ul class="rules stagger">
+     <li><b>One system</b><span>One visual and tone system across both moods.</span></li>
+     <li><b>One word</b><span>Get the client’s “one word” first — it appears on every piece.</span></li>
+     <li><b>STB, lightly</b><span>The budget continental café next door gets ~1 in 5 posts. No separate campaign yet.</span></li>
+    </ul>
+   </div>
+   <div class="mood panel" id="mood" data-anim="pop" data-delay="3">
+    <div class="mood-top">
+     <span class="label" id="mood-label">Day · 12 noon</span>
+     <div class="seg" id="mood-seg" role="group" aria-label="Choose mood"><button data-v="0" class="is-on">Lunch</button><button data-v="100">Evening</button></div>
+    </div>
+    <div class="sky" aria-hidden="true">
+     <svg viewBox="0 0 600 150"><path id="sky-arc" d="M30 140Q300 -60 570 140" fill="none" stroke="currentColor" stroke-width="1.4" stroke-dasharray="4 8" opacity=".5"/>
+      <g id="orb"><circle id="orb-c" r="22" fill="#f0a81c"/><circle id="orb-bite" r="19" fill="#2a1710" opacity="0"/></g></svg>
+    </div>
+    <input type="range" id="mood-range" min="0" max="100" step="1" value="0" aria-label="Slide from lunch to evening" />
+    <div class="mood-body">
+     <div class="mood-col"><span class="label" data-k="theme">The day is about</span><div class="chips" id="mood-chips"></div></div>
+     <div class="mood-col"><span class="label">Audience</span><b id="mood-aud"></b></div>
+    </div>
+    <div class="mood-head"><span class="label">Sample headline</span><h3 id="mood-h"></h3></div>
+    <div class="mood-foot"><span class="tag" id="mood-offer">[Offer from client]</span><span class="tag" id="mood-word">+ client’s one word</span></div>
+   </div>
+  </div>
+  <footer class="foot"><span class="label">Tatsa · Bellandur</span><span class="label">Drag the sun ◆</span></footer>
+ </div>
+</section>
+<!-- ═════ 03 · CONTENT PILLARS ═════ -->
+<section class="slide dark" data-title="Content pillars" data-sub="3 to 4 posts a week" aria-roledescription="slide" aria-label="Content pillars">
+ <div class="stage">
+  <header class="chrome"><span class="label brand">Tatsa · Pillars</span><span class="label folio"><b>03</b> / 11</span></header>
+  <div class="body">
+   <div class="pil-head" data-anim="fade-up" data-delay="1">
+    <div class="stack" style="gap:var(--s-2)"><div class="kicker">02 · Content pillars</div><h2 class="h2">Five pillars. <em>3 to 4 posts</em> a week.</h2></div>
+    <div class="calwrap"><span class="label muted">A typical week</span><div class="week" id="week" aria-hidden="true"></div></div>
+   </div>
+   <div class="pillars" id="pillars" role="tablist" data-anim="fade-up" data-delay="2"></div>
+   <div class="pil-panel panel" id="pil-panel" data-anim="fade-up" data-delay="3" aria-live="polite"></div>
+  </div>
+  <footer class="foot"><span class="label">Tatsa · Bellandur</span><span class="label">Tap a pillar ◆</span></footer>
+ </div>
+</section>
+<!-- ═════ 04 · CHARACTERS ═════ -->
+<section class="slide light" data-title="Characters" data-sub="Fixing the cartoon" aria-roledescription="slide" aria-label="Fixing the characters">
+ <div class="stage">
+  <header class="chrome"><span class="label brand">Tatsa · Characters</span><span class="label folio"><b>04</b> / 11</span></header>
+  <div class="body chars">
+   <div class="chars-top" data-anim="fade-up" data-delay="1">
+    <div class="stack" style="gap:var(--s-2)"><div class="kicker">Fixing the characters</div><h2 class="h2">Two casts. <em>Three panels.</em> One joke.</h2>
+     <p class="lead muted" style="max-width:calc(var(--u)*760)">Humour from relatable situations, food as the punchline. A fixed layout that is easy to produce with AI tools.</p></div>
+    <div class="seg" id="cast-seg" role="group" aria-label="Choose cast"><button data-c="office" class="is-on">The office gang</button><button data-c="family">The family table</button></div>
+   </div>
+   <div class="strip" id="strip" data-anim="fade-up" data-delay="3"></div>
+   <div class="chars-bar" data-anim="fade-up" data-delay="4">
+    <div class="rules-chip"><span class="num">1</span><span>Panel 1<br/><small>the problem</small></span></div>
+    <div class="rules-chip"><span class="num">2</span><span>Panel 2<br/><small>“Tatsa?”</small></span></div>
+    <div class="rules-chip"><span class="num">3</span><span>Panel 3<br/><small>the table</small></span></div>
+    <p class="cap-line" id="cap-line"></p>
+    <button class="btn ghost sm" id="cast-replay">↻ Replay</button>
+   </div>
+  </div>
+  <footer class="foot"><span class="label">Tatsa · Bellandur</span><span class="label">Consistency matters more than the joke ◆</span></footer>
+ </div>
+</section>
+<!-- ═════ 05 · THE HOOK ═════ -->
+<section class="slide dark" data-title="The hook" data-sub="What’s for lunch at Tatsa" aria-roledescription="slide" aria-label="The must-follow hook">
+ <div class="stage">
+  <header class="chrome"><span class="label brand">Tatsa · The hook</span><span class="label folio"><b>05</b> / 11</span></header>
+  <div class="body split2 hook">
+   <div class="stack" style="gap:var(--s-3)">
+    <div class="kicker" data-anim="fade-in" data-delay="1">The “must-follow” hook</div>
+    <h2 class="h2" data-anim="fade-up" data-delay="2">Every Monday: <em>“What’s for lunch at Tatsa?”</em></h2>
+    <p class="lead muted" data-anim="fade-up" data-delay="3" style="max-width:calc(var(--u)*660)">Of recipes, thoughts and calendars, one card wins: useful, repeatable and easy to produce. Posted to Instagram and sent to office WhatsApp groups.</p>
+    <div class="hook-list stagger">
+     <div><span class="n">A</span><span><b>Weekly card</b> — Monday, every week.</span></div>
+     <div><span class="n">B</span><span><b>Monthly calendar</b> — matches &amp; festivals, as a second hook.</span></div>
+    </div>
+    <div class="seg" id="hook-day" role="group" aria-label="Pick a weekday dish">
+     <button data-d="0" class="is-on">Mon</button><button data-d="1">Tue</button><button data-d="2">Wed</button><button data-d="3">Thu</button><button data-d="4">Fri</button>
+    </div>
+   </div>
+   <div class="phone-wrap" data-anim="pop" data-delay="3">
+    <div class="phone" id="phone">
+     <div class="phone-notch"></div>
+     <div class="wa-bar"><span class="wa-av">T</span><span><b>Office · Bellandur Lunch</b><small>12 members · online</small></span></div>
+     <div class="wa-chat" id="wa-chat"></div>
+    </div>
+    <div class="card-float" id="lunch-card" aria-live="polite"></div>
+   </div>
+  </div>
+  <footer class="foot"><span class="label">Tatsa · Bellandur</span><span class="label">Pick a day ◆</span></footer>
+ </div>
+</section>
+<!-- ═════ 06 · CHANNELS ═════ -->
+<section class="slide light" data-title="Channels" data-sub="Where Tatsa shows up" aria-roledescription="slide" aria-label="Channels">
+ <div class="stage">
+  <header class="chrome"><span class="label brand">Tatsa · Channels</span><span class="label folio"><b>06</b> / 11</span></header>
+  <div class="body split2 chan">
+   <div class="stack" style="gap:var(--s-3)">
+    <div class="kicker" data-anim="fade-in" data-delay="1">03 · Channels</div>
+    <h2 class="h2" data-anim="fade-up" data-delay="2">Meet people <em>where they already talk.</em></h2>
+    <div class="chan-list stagger" id="chan-list" role="tablist"></div>
+   </div>
+   <div class="chan-stage panel keyline" id="chan-stage" data-anim="fade-up" data-delay="3" aria-live="polite"></div>
+  </div>
+  <footer class="foot"><span class="label">Tatsa · Bellandur</span><span class="label">Choose a channel ◆</span></footer>
+ </div>
+</section>
+<!-- ═════ 07 · ROLLOUT ═════ -->
+<section class="slide dark" data-title="Rollout" data-sub="Four weeks" aria-roledescription="slide" aria-label="Rollout">
+ <div class="stage">
+  <header class="chrome"><span class="label brand">Tatsa · Rollout</span><span class="label folio"><b>07</b> / 11</span></header>
+  <div class="body">
+   <div class="r-head" data-anim="fade-up" data-delay="1">
+    <div class="stack" style="gap:var(--s-2)"><div class="kicker">04 · Rollout</div><h2 class="h2">Four weeks. <em>One rhythm.</em></h2></div>
+    <button class="btn ghost sm" id="r-play">▶ Play the month</button>
+   </div>
+   <div class="r-track" id="r-track" data-anim="fade-up" data-delay="2">
+    <div class="r-line"><i id="r-fill"></i></div>
+    <button class="r-node is-on" data-i="0"><span class="r-dot"></span><span class="n">Week 01</span><b>Residential</b></button>
+    <button class="r-node" data-i="1"><span class="r-dot"></span><span class="n">Week 02</span><b>In-restaurant</b></button>
+    <button class="r-node" data-i="2"><span class="r-dot"></span><span class="n">Week 03</span><b>Office</b></button>
+    <button class="r-node" data-i="3"><span class="r-dot"></span><span class="n">Week 04</span><b>Review &amp; add</b></button>
+   </div>
+   <div class="r-panel panel swap" id="r-panel" data-anim="fade-up" data-delay="3"></div>
+  </div>
+  <footer class="foot"><span class="label">Tatsa · Bellandur</span><span class="label">Click a week ◆</span></footer>
+ </div>
+</section>
+<!-- ═════ 08 · MEASURE ═════ -->
+<section class="slide light" data-title="Measurement" data-sub="Know which property works" aria-roledescription="slide" aria-label="How to measure">
+ <div class="stage">
+  <header class="chrome"><span class="label brand">Tatsa · Measure</span><span class="label folio"><b>08</b> / 11</span></header>
+  <div class="body split2 meas">
+   <div class="stack" style="gap:var(--s-3)">
+    <div class="kicker" data-anim="fade-in" data-delay="1">05 · How to measure it</div>
+    <h2 class="h2" data-anim="fade-up" data-delay="2">One QR per community. <em>Redemptions tell the story.</em></h2>
+    <div class="kpi-list stagger">
+     <div class="kpi-i"><span class="ic">★</span><span><b>Google reviews</b>Count, and reply speed.</span></div>
+     <div class="kpi-i"><span class="ic">✆</span><span><b>WhatsApp enquiries</b>Corporate &amp; team-lunch bookings.</span></div>
+     <div class="kpi-i"><span class="ic">☰</span><span><b>Weekly note</b>Weekday lunch covers, weekend family covers — even rough.</span></div>
+    </div>
+   </div>
+   <div class="sim panel keyline" data-anim="fade-up" data-delay="3">
+    <div class="sim-top"><div><span class="label muted">Illustrative simulator</span><h3 class="h3" id="sim-title">Offer: “[Community] family table”</h3></div>
+     <div class="sim-btns"><button class="btn sm" id="sim-run">Simulate a week</button><button class="btn ghost sm" id="sim-reset">Reset</button></div></div>
+    <div class="sim-rows" id="sim-rows"></div>
+    <div class="sim-foot"><span class="dot"></span><span id="sim-read" class="sim-read">Press “Simulate a week” to see which community redeems most.</span></div>
+   </div>
+  </div>
+  <footer class="foot"><span class="label">Tatsa · Bellandur</span><span class="disc">Communities and numbers are placeholders until the 4–5 names are confirmed.</span></footer>
+ </div>
+</section>
+<!-- ═════ 09 · BRIEFS ═════ -->
+<section class="slide dark" data-title="Content briefs" data-sub="Five examples" aria-roledescription="slide" aria-label="Example content briefs">
+ <div class="stage">
+  <header class="chrome"><span class="label brand">Tatsa · Briefs</span><span class="label folio"><b>09</b> / 11</span></header>
+  <div class="body briefs">
+   <div class="b-head" data-anim="fade-up" data-delay="1">
+    <div class="stack" style="gap:var(--s-2)"><div class="kicker">06 · Example content briefs</div><h2 class="h2">Five briefs, <em>ready to produce.</em></h2></div>
+   </div>
+   <div class="b-tabs" id="b-tabs" role="tablist" data-anim="fade-up" data-delay="2"></div>
+   <div class="b-main" data-anim="fade-up" data-delay="3">
+    <div class="b-mock" id="b-mock" aria-hidden="true"></div>
+    <div class="b-sheet panel" id="b-sheet" aria-live="polite"></div>
+   </div>
+  </div>
+  <footer class="foot"><span class="label">Tatsa · Bellandur</span><span class="label">Switch briefs ◆</span></footer>
+ </div>
+</section>
+<!-- ═════ 10 · TO CONFIRM ═════ -->
+<section class="slide light" data-title="To confirm" data-sub="Before producing" aria-roledescription="slide" aria-label="To confirm before producing">
+ <div class="stage">
+  <header class="chrome"><span class="label brand">Tatsa · To confirm</span><span class="label folio"><b>10</b> / 11</span></header>
+  <div class="body split2 conf">
+   <div class="stack" style="gap:var(--s-3)">
+    <div class="kicker" data-anim="fade-in" data-delay="1">07 · To confirm before producing</div>
+    <h2 class="h2" data-anim="fade-up" data-delay="2">Four answers <em>unlock the plan.</em></h2>
+    <p class="lead muted" data-anim="fade-up" data-delay="3" style="max-width:calc(var(--u)*640)">Tick what the client has already confirmed. The readiness gauge shows how close production is to starting.</p>
+    <div class="gauge" id="gauge" data-anim="fade-up" data-delay="4">
+     <svg viewBox="0 0 220 130" aria-hidden="true"><path d="M20 115A90 90 0 0 1 200 115" fill="none" stroke="var(--line)" stroke-width="14" stroke-linecap="round"/><path id="g-arc" d="M20 115A90 90 0 0 1 200 115" fill="none" stroke="var(--c-chilli)" stroke-width="14" stroke-linecap="round" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/></svg>
+     <div class="g-read"><b id="g-n">0/4</b><span id="g-t" class="label">Not ready</span></div>
+    </div>
+   </div>
+   <div class="checks stagger" id="checks"></div>
+  </div>
+  <footer class="foot"><span class="label">Tatsa · Bellandur</span><span class="label">Tick to confirm ◆</span></footer>
+ </div>
+</section>
+<!-- ═════ 11 · CLOSE ═════ -->
+<section class="slide dark" data-title="Decisions" data-sub="What we need from you" aria-roledescription="slide" aria-label="Decisions and next steps">
+ <div class="stage">
+  <header class="chrome"><span class="label brand">Tatsa · Next</span><span class="label folio"><b>11</b> / 11</span></header>
+  <div class="body split2 close">
+   <div class="stack" style="gap:var(--s-4)">
+    <div class="kicker" data-anim="fade-in" data-delay="1">Next step</div>
+    <h1 class="h1" data-anim="fade-up" data-delay="2">Lunch, decided. <em>Evening, sorted.</em></h1>
+    <p class="lead muted" data-anim="fade-up" data-delay="3" style="max-width:calc(var(--u)*660)">Pick the decisions you can make today. We’ll turn them into a Week 1 production list.</p>
+    <div class="signoff" data-anim="fade-up" data-delay="4">
+     <div><span class="label">Prepared by</span><b>Thrine</b></div>
+     <div><span class="label">Date</span><b>October 2026</b></div>
+     <div><span class="label">Status</span><b>Draft for discussion</b></div>
+    </div>
+   </div>
+   <div class="col" style="gap:var(--s-4)">
+    <div class="intents stagger" id="intents">
+     <button class="intent panel is-on" data-intent="Approve the positioning" aria-pressed="true"><span class="n">01</span><span><b>Approve the positioning</b><span class="d">One restaurant, two moods, one system.</span></span><span class="ck"><svg viewBox="0 0 24 24"><path d="M4 12.5l5 5L20 6.5"/></svg></span></button>
+     <button class="intent panel" data-intent="Share the one word and offers" aria-pressed="false"><span class="n">02</span><span><b>Share the “one word” and offers</b><span class="d">So standees, cards and visuals can start.</span></span><span class="ck"><svg viewBox="0 0 24 24"><path d="M4 12.5l5 5L20 6.5"/></svg></span></button>
+     <button class="intent panel" data-intent="Name the communities and send photos" aria-pressed="false"><span class="n">03</span><span><b>Name the communities, send photos</b><span class="d">Tracking offers plus shoot-or-AI decision.</span></span><span class="ck"><svg viewBox="0 0 24 24"><path d="M4 12.5l5 5L20 6.5"/></svg></span></button>
+    </div>
+    <div class="summary panel" id="summary" aria-live="polite" data-anim="fade-up" data-delay="5"></div>
+    <div style="display:flex;gap:var(--s-3);flex-wrap:wrap" data-anim="fade-up" data-delay="6">
+     <button class="btn" id="btn-copy">Copy decision list <span class="arr" aria-hidden="true">→</span></button>
+     <button class="btn ghost" data-go="0"><span aria-hidden="true">↺</span> Back to the beginning</button>
+    </div>
+   </div>
+  </div>
+  <footer class="foot"><span class="label">Tatsa · Bellandur · Strategy plan</span><span class="label">Easy, good Indian meal ◆</span></footer>
+ </div>
+</section>
+</main>
+
+<script src="js/figures.js"></script>
+<script src="js/engine.js"></script>
+<script src="js/modules.js"></script>
+<script src="js/fx.js"></script>
+</body>
+</html>
